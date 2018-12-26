@@ -1,10 +1,19 @@
 {
-    "id": "81a1d431-14eb-4233-a706-fa0197023b70",
+    "id": "0697aa01-b29e-4df0-898a-2559d42233cd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_pedals",
+    "name": "obj_pedal_gas",
     "eventList": [
-        
+        {
+            "id": "bf539573-ab2b-41a0-ba1d-562822c2fcf5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "0697aa01-b29e-4df0-898a-2559d42233cd"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "46bce6f2-2cdc-4b64-8560-69f67b1acb92",
+    "spriteId": "23a0b3d4-8f46-4932-b8d3-b63a34785a91",
     "visible": true
 }

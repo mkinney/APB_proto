@@ -54,3 +54,6 @@ if (s_key) {
 		obj_siren.image_alpha = 0.5;
 	}
 }
+
+// set the road speed
+sprite_set_speed(spr_road, global.road_speed, spritespeed_framespersecond);

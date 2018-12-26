@@ -1,0 +1,1 @@
+global.road_speed++;

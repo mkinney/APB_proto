@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "0697aa01-b29e-4df0-898a-2559d42233cd",
+            "Value": {
+                "id": "c08b3cd8-6e17-405d-a9c2-089664656372",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_pedal_gas\/obj_pedal_gas.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "08c855cd-693d-44c8-8208-82da6fd56ff1",
             "Value": {
                 "id": "e604f624-ecd7-4e52-ae0c-35c4b3656ebe",
@@ -153,6 +172,25 @@
             }
         },
         {
+            "Key": "23a0b3d4-8f46-4932-b8d3-b63a34785a91",
+            "Value": {
+                "id": "5e1c0cbc-bdb8-42b6-a59f-1cfec1809e77",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_pedal_gas\/spr_pedal_gas.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "396d933d-27fc-4449-af73-1719a0c9334e",
             "Value": {
                 "id": "54f6c31b-2d60-46d0-89db-839dafe183b9",
@@ -205,7 +243,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_pedals\/spr_pedals.yy",
+                "resourcePath": "sprites\/spr_pedal_brake\/spr_pedal_brake.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -338,7 +376,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/obj_pedals\/obj_pedals.yy",
+                "resourcePath": "objects\/obj_pedal_brake\/obj_pedal_brake.yy",
                 "resourceType": "GMObject"
             }
         },
