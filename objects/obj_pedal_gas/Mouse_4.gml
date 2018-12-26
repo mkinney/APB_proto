@@ -1,1 +1,1 @@
-global.road_speed++;
+adjust_speed(1);

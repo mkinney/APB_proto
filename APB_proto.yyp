@@ -305,6 +305,63 @@
             }
         },
         {
+            "Key": "54d8a2ed-b60a-4158-9fc9-601ca1ea6c0f",
+            "Value": {
+                "id": "0a37563e-5e9e-41b3-899a-a065ecddb876",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/adjust_steering\/adjust_steering.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5dd30971-2a62-494b-bccb-3d25e66cf5f7",
+            "Value": {
+                "id": "d325cd5c-a1e9-4196-ab4b-ae073613f925",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/adjust_speed\/adjust_speed.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "69d348b2-fa3c-463c-9d8c-7fbd5cdccd11",
+            "Value": {
+                "id": "38675948-be04-4c46-92de-fd05974f5da9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_road\/spr_road.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7223ed02-da16-4b2d-853d-9703c61374e3",
             "Value": {
                 "id": "a03adb64-e712-4f57-97ed-8469a611a901",
@@ -454,25 +511,6 @@
                 ],
                 "resourcePath": "views\/8c51182e-c984-4b92-80c4-a81437c9a61c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9f11752d-3004-45e6-8bbc-9a27730fe1ba",
-            "Value": {
-                "id": "cb930192-ca80-4b7a-8611-e217c3ad9f8f",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/spr_road\/spr_road.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -819,7 +857,8 @@
         }
     ],
     "script_order": [
-        
+        "5dd30971-2a62-494b-bccb-3d25e66cf5f7",
+        "54d8a2ed-b60a-4158-9fc9-601ca1ea6c0f"
     ],
     "tutorial": ""
 }

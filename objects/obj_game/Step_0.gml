@@ -1,3 +1,21 @@
+var last_y = -64;
+for (var i = 0; i < road_count; i++) {
+	if (roads[i] == noone) {
+		var r = instance_create_layer(100, last_y, "Instances", obj_road);
+		r.direction = 270;
+		r.speed = global.road_speed;
+		roads[i] = r;
+		last_y -= 64;
+	} else {
+		if (roads[i].y > room_height) {
+			instance_destroy(roads[i]);
+			roads[i] = noone;
+		} else {
+			last_y = roads[i].y - 64;
+		}
+	}
+}
+
 if (device_mouse_check_button_pressed(0, mb_left)) {
 	
 	// see if we have left clicked the virtual steering wheel
@@ -12,13 +30,13 @@ if (device_mouse_check_button_pressed(0, mb_left)) {
 		show_debug_message("mouse_x:" + string(mouse_x) + " mouse_y:" + string(mouse_y));
 		show_debug_message("sw x:" + string(sw.x) + " y:" + string(sw.y));
 		show_debug_message("sw x2:" + string(sw.x + sw.sprite_width / 2) + " y:" + string(sw.y + sw.sprite_height));
-		
+
 		if (right) {
-			obj_car_cop.x += 5;
+			adjust_steering(steering_amount);
 		} else {
-			obj_car_cop.x -= 5;
+			adjust_steering(steering_amount * -1);
 		}
-		
+
 	}
 	
 	// siren
@@ -35,11 +53,30 @@ if (device_mouse_check_button_pressed(0, mb_left)) {
 			alarm[0] = -1;
 			obj_siren.image_alpha = 0.5;
 		}
-	}
-		
+	}		
 }
 
-s_key = keyboard_check_released(ord("S"));
+// allow arrow keys to steer
+var left = keyboard_check(vk_left);
+if (left) {
+	adjust_steering(steering_amount * -1);
+}
+var right = keyboard_check(vk_right);
+if (right) {
+	adjust_steering(steering_amount);
+}
+// space for brake
+var space = keyboard_check_pressed(vk_space);
+if (space) {
+	adjust_speed(-1);
+}
+// down for gas
+var down = keyboard_check_pressed(vk_down);
+if (down) {
+	adjust_speed(1);
+}
+
+var s_key = keyboard_check_released(ord("S"));
 if (s_key) {
 	// siren
 	show_debug_message("S pressed for siren: " + string(siren));
