@@ -609,6 +609,25 @@
             }
         },
         {
+            "Key": "b315ceff-6d88-47c4-bf66-fdf49d5eecd1",
+            "Value": {
+                "id": "716640f4-b98e-44c4-8d40-4baa98c568e1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fnt_speedometer\/fnt_speedometer.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b6fd150f-44b0-4424-b64d-b920e56ced2f",
             "Value": {
                 "id": "cbbdab29-69de-46ce-bef8-abee087ee456",
