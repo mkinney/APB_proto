@@ -38,3 +38,19 @@ if (device_mouse_check_button_pressed(0, mb_left)) {
 	}
 		
 }
+
+s_key = keyboard_check_released(ord("S"));
+if (s_key) {
+	// siren
+	show_debug_message("S pressed for siren: " + string(siren));
+	siren = !siren;
+	if (siren) {
+		audio_play_sound(snd_siren, 100, true);
+		obj_siren.image_alpha = 1;
+		alarm[0] = siren_delay;
+	} else {
+		audio_stop_sound(snd_siren);
+		alarm[0] = -1;
+		obj_siren.image_alpha = 0.5;
+	}
+}
